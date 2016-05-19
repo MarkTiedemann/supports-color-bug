@@ -1,0 +1,11 @@
+{
+  "name": "supports-color-bug",
+  "version": "0.0.0",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "dependencies": {
+    "ansi-styles": "^2.2.1",
+    "supports-color": "^3.1.2"
+  }
+}
