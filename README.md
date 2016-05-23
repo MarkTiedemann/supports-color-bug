@@ -10,7 +10,7 @@ const supportsColor = require('supports-color')
 const style = require('ansi-styles')
 
 if (supportsColor) {
-    console.log('Supports color: '  + style.green.open + true + style.green.close)
+    console.log('Supports color: ' + style.green.open + true + style.green.close)
 } else {
     console.log('Supports color: ' + style.red.open + false + style.red.close)
 }
@@ -28,4 +28,14 @@ This is a `wontfix`: [https://github.com/chalk/supports-color/issues/36](https:/
 
 ## Workaround
 
-Set the environment variable `FORCE_COLOR=1` or add the `--color` CLI flag.
+Set the environment variable `FORCE_COLOR=1`:
+
+```
+FORCE_COLOR=1 npm test
+```
+
+Or add the `--color` CLI flag:
+
+```
+npm test -- --color
+```
