@@ -1,7 +1,7 @@
 
 # supports-color-bug
 
-**Demonstrates bug where `supportsColor` is `false` even though colors can be displayed with `ansi-styles` in NPM scripts in Git Bash for Windows.**
+**Demonstrates bug where `chalk/supports-color` is `false` even though colors can be displayed with `chalk/ansi-styles` in NPM scripts in Git Bash for Windows.**
 
 ## Code
 
@@ -20,4 +20,12 @@ if (supportsColor) {
 
 ![](https://raw.githubusercontent.com/MarkTiedemann/supports-color-bug/master/git-bash.png)
 
-As the screenshot shows, `false` is red, so colors are *actually* supported.
+As the screenshot shows, `false` is red, so colors are actually supported.
+
+## Status
+
+This is a `wontfix`: [https://github.com/chalk/supports-color/issues/36](https://github.com/chalk/supports-color/issues/36).
+
+## Workaround
+
+Set the environment variable `FORCE_COLOR=1` or add the `--color` CLI flag.
